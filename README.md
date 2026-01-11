@@ -10,6 +10,7 @@
 pip install matplotlib numpy
 ```
 
+2. 运行
 
 ```sh
 cd mnist
@@ -27,3 +28,10 @@ Epoch [498/500], Time: 3.05s, Train Loss: 0.0062, Train Acc: 0.9920, Val Loss: 0
 Epoch [499/500], Time: 2.86s, Train Loss: 0.0062, Train Acc: 0.9920, Val Loss: 0.0061, Val Acc: 0.9921
 Epoch [500/500], Time: 3.09s, Train Loss: 0.0062, Train Acc: 0.9921, Val Loss: 0.0061, Val Acc: 0.9925
 ```
+
+Epoch=500:
+- Loss曲线：
+![loss_accuracy.png](mnist/loss_accuracy.png)
+
+- 验证集结果可视化：
+![digit_predictions.png](mnist/digit_predictions.png)
