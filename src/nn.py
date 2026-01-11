@@ -11,7 +11,7 @@ class Linear:
             np.random.randn(in_features, out_features).astype(np.float32) * std.astype(np.float32),
             requires_grad=True
         )
-        print(f"Linear {self.weight.data.dtype=}")
+        # print(f"Linear {self.weight.data.dtype=}")
     
     def __call__(self, x):
         return matmul(x, self.weight)

@@ -53,6 +53,12 @@ def train_mnist(mlp_config: MLPConfig, num_epochs: int):
     
     # 训练参数
     batch_size = 64
+
+    print(f"=======Config============")
+    print(f"Epoch = {num_epochs}, batch_size={batch_size}")
+    print(f"Model: {model}")
+    print(f"Optimizer: {optimizer}")
+    print(f"=========================")
     
     num_batches = train_images.shape[0] // batch_size
     if num_batches * batch_size < train_images.shape[0]:
@@ -194,8 +200,5 @@ def evaluate(model, images, labels, batch_size=64):
 
 if __name__ == "__main__":
     num_epochs = int(sys.argv[1])
-    print(f"=======Config============")
-    print(f"Epoch = {num_epochs}")
-    print(f"===================")
 
     train_mnist(MLPConfig(), num_epochs)
